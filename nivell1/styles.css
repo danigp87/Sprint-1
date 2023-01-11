@@ -16,7 +16,7 @@
         flex-flow: column nowrap;
     }
         .menu {
-            background: rgb(255, 255, 255);
+            background: rgb(197, 197, 197);
             display: flex;
             flex-flow: row nowrap;
             height: 100px;
@@ -38,10 +38,10 @@
                 height: 30px;
             }
         .texto-principal{
-            background: rgb(0, 160, 0);
+            background: rgb(2, 105, 2);
         }
-            h1{
-                background: rgb(160, 0, 139);
+        h1{
+            background: rgb(233, 72, 211);
             }
 
     .section {
@@ -49,21 +49,21 @@
         display: flex;
     }
         .articulos{
-            background: rgb(4, 255, 234);
+            background: rgb(0, 122, 112);
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
         }
             .articulo{
-                background: rgb(252, 123, 2);
+                background: rgb(255, 153, 58);
                 flex: 1 1 40%;
             }
             .navegacion{
-                background: rgb(255, 188, 125);
+                background: rgb(255, 67, 67);
                 flex: 1 1 100%;
             }
         .aside{
-            background: rgb(255, 32, 143);
+            background: rgb(196, 0, 98);
             flex: 1 1 auto;
         }
             .publicidad{
@@ -75,30 +75,50 @@
         justify-content: center;
     }
         .pie{
-            background: rgb(0, 53, 167);
+            background: rgb(0, 72, 228);
             width: 300px;
         }
 
 @media all and (max-width: 800px){
+        .menu {
+            flex-direction: row;
+            height: auto;
+        }
         .section {
             flex-direction: column;
-        }
-        .menu {
-            flex-direction: column;
-            height: auto;
         }
         .aside {
             display: flex;
             justify-content: center;
+            flex-direction: column;
+        }
+        .pie {
+            flex: 1 1 100%;
         }
     }
-@media all and (max-width: 600px){
-    .articulos {
+
+@media only screen and (max-width: 800px) {
+    .section {
+      background-color: rgb(131, 131, 131);
+    }
+  }
+
+  @media all and (max-width: 400px){
+    .menu {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .logo, .nav, .social {
+        width: 95%;
+    }
+    .section {
         flex-direction: column;
     }
-}
-@media all and (max-width: 400px){
-    .aside{
+    .aside {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
     }
+    
 }
