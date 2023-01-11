@@ -48,3 +48,72 @@ Animaciones
 https://www.w3schools.com/css/css3_animations.asp
 
 
+
+
+
+
+#background1 {
+    margin: auto;
+    max-width: 1200px;
+    height: 120px;
+    padding: 15px;
+    background-color: black;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+}
+
+#background2 {
+    margin: auto;
+    margin-top: 25px;
+    max-width: 1200px;
+    height: 150px;
+    padding: 15px;
+    background-color: black;
+    box-sizing: border-box;
+    flex-flow: column wrap;
+}
+
+#background3 {
+    margin: auto;
+    margin-top: 25px;
+    max-width: 1200px;
+    height: 40px;
+    padding: 15px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+#firstLayer1 {
+    margin: auto;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+}
+
+#firstLayer2 {
+    margin: auto;
+    margin-top: 15px;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+}
+
+#firstLayer3 {
+    margin: auto;
+    width: 65%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+    float: left;
+   
+}
+
+#firstLayer4 {
+    margin: auto;
+    width: 33%;
+    height: 100%;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+    
+}
