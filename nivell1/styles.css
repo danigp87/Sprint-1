@@ -99,7 +99,7 @@
 
 @media only screen and (max-width: 800px) {
     .section {
-      background-color: rgb(131, 131, 131);
+        background-color: rgb(131, 131, 131);
     }
   }
 
@@ -107,10 +107,7 @@
     .menu {
         flex-direction: column;
         display: flex;
-        align-items: center;
-    }
-    .logo, .nav, .social {
-        width: 95%;
+        align-items: stretch;
     }
     .section {
         flex-direction: column;
@@ -120,5 +117,4 @@
         justify-content: center;
         flex-direction: column;
     }
-    
 }
