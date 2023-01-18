@@ -12,7 +12,7 @@
 }
 
     .header {
-        background: url(../Images/header.jpg);
+        background: url(../../Images/header.jpg);
         background-position: center;
         background-size: cover;
         background-attachment: contain;
@@ -27,7 +27,8 @@
             .logo{
                 display: flex;
                 flex: 1 1 auto;
-                               
+                animation: opacidadDesdeIzquierda 1s ease-in;
+                
             }
             .logo img{
                 width: 100%;
@@ -36,6 +37,7 @@
                 display: flex;
                 flex: 5 1 auto;
                 flex-flow: row wrap;
+                animation: opacidadDesdeArriba 1s ease-in;
             }
                 .nav a{
                     text-decoration: none;
@@ -53,6 +55,7 @@
                 display: flex;
                 flex: 1 1 auto;
                 flex-flow: row nowrap;
+                animation: opacidadDesdeDerecha 1s ease-in;
             }
                 .social a{
                     font-size: 18px;
@@ -193,5 +196,38 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+}
+
+@keyframes opacidadDesdeIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacidadDesdeDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacidadDesdeArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

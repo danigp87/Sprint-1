@@ -6,37 +6,44 @@
 }
 
 .padre {
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 10px;
+    justify-content: center;
 }
 
     .header {
         background: #000;
-        display: flex;
-        flex-flow: column nowrap;
+        display: grid;
+        column-gap: 10px;
     }
         .menu {
             background: rgb(197, 197, 197);
-            display: flex;
-            flex-flow: row nowrap;
-            height: 100px;
+            display: grid;
+            grid-template-columns: 18% 64% 18%;
             align-items: center;
         }
             .logo{
                 background: rgb(255, 0, 0);
-                flex: 1 1 auto;
-                height: 30px;
+                justify-content: center;
             }
+
             .nav{
                 background: rgb(255, 0, 0);
-                flex: 5 1 auto;
-                height: 30px;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                column-gap: 15px;
+                justify-content: center;
             }
+
             .social{
                 background: rgb(255, 0, 0);
-                flex: 1 1 auto;
-                height: 30px;
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 10px;
+                justify-content: center;
             }
+
         .texto-principal{
             background: rgb(2, 105, 2);
         }
@@ -46,54 +53,56 @@
 
     .section {
         background: #000;
-        display: flex;
-    }
+        display: grid;
+        grid-template-columns: 67% 33%;
+        }
         .articulos{
             background: rgb(0, 122, 112);
-            flex: 2 1 auto;
-            display: flex;
-            flex-flow: row wrap;
+            display: grid;
+            grid-template-columns: 2;
+            /* column-gap: 10px; */
+            /* align-items: center; */
+            /* padding: 10px; */
         }
             .articulo{
                 background: rgb(255, 153, 58);
-                flex: 1 1 40%;
+                display: grid;
+                grid-template-columns: 2;
             }
             .navegacion{
                 background: rgb(255, 67, 67);
-                flex: 1 1 100%;
+                display: grid;
+                grid-column: 1 / span 2;
             }
+
         .aside{
             background: rgb(196, 0, 98);
-            flex: 1 1 auto;
         }
             .publicidad{
                 background: rgb(174, 255, 44);
             }
     .footer {
         background: #000;
-        display: flex;
+        display: grid;
+        grid-template-columns: 33%;
         justify-content: center;
     }
         .pie{
             background: rgb(0, 72, 228);
-            width: 300px;
         }
 
 @media all and (max-width: 800px){
-        .menu {
-            flex-direction: row;
-            height: auto;
-        }
         .section {
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 100%;
         }
         .aside {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            display: grid;
+            grid-template-rows: 50% 50%;
         }
-        .pie {
-            flex: 1 1 100%;
+        .footer {
+            display: grid;
+            grid-template-columns: 100%;
         }
     }
 
@@ -104,17 +113,14 @@
   }
 
   @media all and (max-width: 600px){
-    .menu {
-        flex-direction: column;
+    .menu{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .articulos{
         display: flex;
-        align-items: stretch;
-    }
-    .section {
         flex-direction: column;
+        /* justify-content: center;
+        flex-direction: column; */
     }
-    .aside {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
+  }
