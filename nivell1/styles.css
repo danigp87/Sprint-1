@@ -76,7 +76,7 @@
     }
         .pie{
             background: rgb(0, 72, 228);
-            width: 300px;
+            flex: 1 1 100%;
         }
 
 @media all and (max-width: 800px){
@@ -92,9 +92,7 @@
             justify-content: center;
             flex-direction: column;
         }
-        .pie {
-            flex: 1 1 100%;
-        }
+        
     }
 
 @media only screen and (max-width: 800px) {
